@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    background: black;
+    color: #fcfcfc;
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    padding-top: 70px; /* Prevent content from hiding behind the navbar */
+}
+
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+    background-color: #3DED97; /* Desired green color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    border: 2px solid #FFD700; /* Explicitly define border width and color */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #000000;
+}
+
+.navbar-brand:hover {
+    color: #000000;
+}
+
+.nav-link {
+    color: #000000;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Card Styles */
+.card {
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.2s;
+    color: #ffffff; /* Light text inside cards */
+    border-color: #FFD700;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+/* Button Styles (if needed) */
+.btn-primary {
+    background-color: #0F4C81;
+    border: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #FFD700;
+    transform: translateY(-2px);
+}
+
+/* Section Headers */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #3DED97; /* Ensure consistency on smaller screens */
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}

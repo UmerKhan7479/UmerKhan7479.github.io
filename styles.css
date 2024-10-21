@@ -1,38 +1,78 @@
 /* Global Styles */
 body {
-    background: black;
-    color: #fcfcfc;
+    background: #fff;
+    color: #fff;
     font-family: 'Arial', sans-serif; /* Clean and modern font */
     background-size: cover;
     background-attachment: fixed; /* Keeps the background fixed when scrolling */
     padding-top: 70px; /* Prevent content from hiding behind the navbar */
+    margin: 0; /* Remove default margin to avoid white space around the body */
 }
 
 /* Navbar Styles */
-/* Navbar Styles */
-.navbar {
-    background-color: #3DED97; /* Desired green color */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    border: 2px solid #FFD700; /* Explicitly define border width and color */
+/* Global Styles */
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 70px;
+    margin: 0;
 }
 
-.navbar-brand {
-    font-weight: bold;
-    color: #000000;
+/* Navbar Styles */  
+.navbar {  
+    background-color: #fff;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);  
+    border: none;  
+    display: flex;  
+    /*align-items: center; /* Align items vertically */  
+    justify-content: space-between; /* Ensure brand is on one side and nav items on the other */  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    width: 100%;  
+    padding: 10px 20px;  
+    z-index: 10;  
+}  
+
+.navbar-brand {  
+    font-weight: bold;  
+    color: #000000;  
+    text-decoration: none; /* Remove underline from the brand */  
+    margin-right: 20px; /* Space between brand and nav items */  
+}  
+
+.navbar-brand:hover {  
+    color: #FFD700;  
+}  
+
+.navbar-nav {  
+    display: flex; /* Arrange nav items horizontally */  
+    /*align-items: center; /* Vertically center nav items */  
+    gap: 20px; /* Space between nav items */  
+    list-style: none; /* Remove default list styling */  
+    margin: 0;  
+    padding: 0;  
+}  
+
+.nav-item {  
+    margin: 0;  
+}  
+
+.nav-link {  
+    color: #000000;  
+    text-decoration: none; /* Remove underline */  
+    transition: color 0.3s;  
+    font-size: 16px;  
+}  
+
+.nav-link:hover {  
+    color: #FFD700; /* Gold color on hover */  
 }
 
-.navbar-brand:hover {
-    color: #000000;
-}
-
-.nav-link {
-    color: #000000;
-    transition: color 0.2s;
-}
-
-.nav-link:hover {
-    color: #FFD700; /* Gold color on hover */
-}
 
 /* Card Styles */
 .card {
@@ -40,7 +80,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     transition: transform 0.2s;
-    color: #ffffff; /* Light text inside cards */
+    color: #fff; /* Text inside cards */
     border-color: #FFD700;
 }
 
@@ -81,10 +121,16 @@ h1 {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .navbar {
-        background-color: #3DED97; /* Ensure consistency on smaller screens */
+        background-color: #fff; /* Ensure consistency on smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
     }
-    
+
     h1 {
         font-size: 2rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack links vertically on small screens */
+        gap: 10px; /* Adjust spacing between links */
     }
 }

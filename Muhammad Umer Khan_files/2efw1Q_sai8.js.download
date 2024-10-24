@@ -1,3 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("LSUpdateAppSelectorSetting",["LSGetViewerFBID"],(function(a,b,c,d,e,f){function a(){var a=arguments,c=a[a.length-1],d=[],e=[];return c.sequence([function(a){return c.storedProcedure(b("LSGetViewerFBID")).then(function(a){return a=a,d[0]=a[0],a})},function(a){return c.resolve(e)}])}a.__sproc_name__="LSOmnistoreSettingsUpdateAppSelectorSettingStoredProcedure";e.exports=a}),null);
